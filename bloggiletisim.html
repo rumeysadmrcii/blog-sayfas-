@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:#fff0f5;
+        }
+
+        header {
+            background-color: #FFBAD8;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+           
+            align-items: center;
+        }
+
+        header img {
+            width: 200px;
+            height: auto;
+            margin-right: 100px;
+            margin-bottom:0px
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        header li {
+            margin-right: 20px;
+        }
+        header li:hover{
+            transition: 0.7s;
+            background-color: rgba(45, 42, 44, 0.37);
+        }
+
+        header li:last-child {
+            margin-right: 0;
+        }
+
+        header li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .iconlar {
+            display: flex;
+            align-items: right;
+        }
+
+        .iconlar a i {
+            width: 40px;
+            height: 30px;
+            margin-left: 120px;
+            margin-right: 34;
+            color: aliceblue;
+        }
+        h1{
+            font-family:Palatino;
+        }
+        
+      
+      
+   
+      
+    </style>
+    <style>
+        .iletisimform {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #3a0c41;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .iletisimform h2 {
+            text-align: center;
+        }
+
+        .iletisimform label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .iletisimform input[type="text"],
+        .iletisimform input[type="email"],
+        .iletisimform textarea {
+            width: 100%;
+            .iletisimform textarea {
+            height: 100px;
+        }
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #a62488;
+            border-radius: 3px;
+            box-sizing: border-box; 
+        }
+
+       
+
+        .iletisimform input[type="submit"] {
+            background-color: #68bfb5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .iletisimform input[type="submit"]:hover {
+            background-color: #af3498;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="resimler/Pink and White Minimalist Initial Makeup Artist Logo-Photoroom.png-Photoroom.png" alt="Logo">
+        <ul>
+            <li><a href="http://127.0.0.1:3000/blogg.html">Anasayfa</a></li>
+            <li><a href="http://127.0.0.1:3000/blogghakkımda.html">Hakkımda</a></li>
+            <li><a href="http://127.0.0.1:3000/bloggiletisim.html">İletişim   </a></li>
+        </ul>
+        <div class="iconlar">
+            <a href="https://www.instagram.com/rumeysadmrcii/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/login?lang=tr"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        </header>
+        <div class="iletisimform">
+            <h2>İletişim Formu</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+                
+                <input type="submit" value="Gönder">
+            </form>
+        </div>
+    
+</body>
+</html>
